@@ -5,7 +5,7 @@ cp-zookeeper:
   enabled: true
   servers: 3
   image: confluentinc/cp-zookeeper
-  imageTag: 5.5.1
+  imageTag: 5.5.0
   ## Optionally specify an array of imagePullSecrets. Secrets must be manually created in the namespace.
   ## https://kubernetes.io/docs/concepts/containers/images/#specifying-imagepullsecrets-on-a-pod
   imagePullSecrets:
@@ -19,11 +19,11 @@ cp-zookeeper:
     ### Size for Data dir, where ZooKeeper will store the in-memory database snapshots.
     dataDirSize: 10Gi
     #dataDirStorageClass: ""
-    disksPerBroker: 1
+    #disksPerBroker: 1
     ## Size for data log dir, which is a dedicated log device to be used, and helps avoid competition between logging and snaphots.
     dataLogDirSize: 10Gi
     #dataLogDirStorageClass: ""
-    disksPerBroker: 1
+    #disksPerBroker: 1
   resources: {}
   ## If you do want to specify resources, uncomment the following lines, adjust them as necessary,
   ## and remove the curly braces after 'resources:'
