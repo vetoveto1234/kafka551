@@ -64,18 +64,18 @@ clientPort: 2181
 ## Persistent Volumes
 ## ref: https://kubernetes.io/docs/concepts/storage/persistent-volumes/
 persistence:
-  enabled: true
-
+#  enabled: true
+  enabled: false
   ## The size of the PersistentVolume to allocate to each Zookeeper Pod in the StatefulSet. For
   ## production servers this number should likely be much larger.
   ##
   ## Size for Data dir, where ZooKeeper will store the in-memory database snapshots.
   dataDirSize: 5Gi
-  dataDirStorageClass: ""
+  #dataDirStorageClass: ""
   
   ## Size for data log dir, which is a dedicated log device to be used, and helps avoid competition between logging and snaphots.
   dataLogDirSize: 5Gi
-  dataLogDirStorageClass: ""
+  #dataLogDirStorageClass: ""
   
 
 ## Pod Compute Resources
