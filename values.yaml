@@ -16,7 +16,7 @@ cp-zookeeper:
     ## The size of the PersistentVolume to allocate to each Zookeeper Pod in the StatefulSet. For
     ## production servers this number should likely be much larger.
     ##
-    ## Size for Data dir, where ZooKeeper will store the in-memory database snapshots.
+    ### Size for Data dir, where ZooKeeper will store the in-memory database snapshots.
     dataDirSize: 10Gi
     dataDirStorageClass: ""
 
